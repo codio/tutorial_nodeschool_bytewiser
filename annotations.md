@@ -1,5 +1,5 @@
 @annotation:tour buffer_from_string
-#Buffer From String
+#1. Buffer From String
 ##Challenge
 In Node.js, [`Buffer`]((http://nodejs.org/api/all.html#all_buffer)) is a global object that provides a way to work with different kinds of binary data. Most APIs in Node core (e.g. http, net, fs) will give you buffers, and will be able to do their job faster if you give them buffers.
 
@@ -23,7 +23,7 @@ To get output for debugging when running `bytewiser run program.js` you should u
 
 
 @annotation:tour hexadecimal_encoding
-#Hexadecimal Encoding
+#2. Hexadecimal Encoding
 ##Challenge
 You can convert data between different representations, also known as encodings, using Buffers.
 
@@ -47,7 +47,7 @@ Use  [`.toString`](http://nodejs.org/api/buffer.html#buffer_buf_tostring_encodin
 
 
 @annotation:tour modifying_buffers
-#Modifying Buffers
+#3. Modifying Buffers
 ##Challenge
 Buffers are similar to Arrays in that you can get and set values at particular offsets.
 
@@ -66,7 +66,7 @@ The integer value of the ascii character . is 46.
 
 
 @annotation:tour line_splitter
-#Splitting Lines
+#4. Splitting Lines
 ##Challenge
 The argument given to you from `process.argv[2]` will be a path to a file.
 
@@ -85,7 +85,7 @@ Extra bonus points if you avoid using fs.readFileSync.
 
 
 @annotation:tour buffer_concat
-#Concatenating Buffers
+#5. Concatenating Buffers
 ##Challenge
 I/O streams in node (like [fs.createReadStream](http://nodejs.org/api/fs.html#fs_fs_createreadstream_path_options) for example) will emit incremental Buffers as they arrive as opposed to waiting for the full data to arrive.
 
@@ -106,7 +106,7 @@ Use [Buffer.concat](http://nodejs.org/api/buffer.html#buffer_class_method_buffer
 
 
 @annotation:tour typed_arrays
-#Typed Arrays
+#6. Typed Arrays
 ##Challenge
 Typed Arrays offer another way to work with binary data. They were first added to JS in 2010 and have now been standardized across most browsers thanks to the WebGL specification for 3D programming in the browser. Typed Arrays don't have as much built-in functionality as Buffers in node, but they have the unique advantage of working in browsers.
 
@@ -120,7 +120,7 @@ For this challenge, read the first buffer from process.stdin, copy all bytes int
 
 
 @annotation:tour array_buffers
-#Array Buffers
+#7. Array Buffers
 ##Challenge
 Array Buffers are the backend for Typed Arrays. Whereas Buffer in node is both the raw bytes as well as the encoding/view, Array Buffers are only raw bytes and you have to create a Typed Array on top of an Array Buffer in order to access the data.
 
