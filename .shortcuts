@@ -1,0 +1,5 @@
+{
+  "Run": "bytewiser select {{current_file}} && bytewiser run {{current_file}}",
+  "Verify": "bytewiser select {{current_file}} && bytewiser verify {{current_file}},
+  "default": "Run"
+}
