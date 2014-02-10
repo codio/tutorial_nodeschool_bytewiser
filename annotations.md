@@ -1,7 +1,7 @@
 @annotation:tour buffer_from_string
 #1. Buffer From String
 ##Challenge
-In Node.js, [`Buffer`]((http://nodejs.org/api/all.html#all_buffer)) is a global object that provides a way to work with different kinds of binary data. Most APIs in Node core (e.g. http, net, fs) will give you buffers, and will be able to do their job faster if you give them buffers.
+In Node.js, [`Buffer`]((http://nodejs.org/api/all.html#all_buffer) is a global object that provides a way to work with different kinds of binary data. Most APIs in Node core (e.g. http, net, fs) will give you buffers, and will be able to do their job faster if you give them buffers.
 
 For this challenge, write a node program that prints a buffer object containing the string "bytewiser" using console.log.
 
@@ -70,14 +70,14 @@ The integer value of the ascii character . is 46.
 ##Challenge
 The argument given to you from `process.argv[2]` will be a path to a file.
 
-Read this file and split it by newline characters ('\n'). You should log one Buffer per line.
+Read this file and split it by newline characters (`\n`). You should log one Buffer per line.
 
 Bonus points if you never use `.toString()`.
 
 ##Hints
 Buffers have a [`.slice`](http://nodejs.org/api/all.html#all_buf_slice_start_end) method that can be used to grab a sub-selection as a view (no memcpy).
 
-Extra bonus points if you avoid using fs.readFileSync.
+Extra bonus points if you avoid using `fs.readFileSync`.
 
 ###Documentation
 - [buffers](http://nodejs.org/api/all.html#all_buffer) module
@@ -112,7 +112,7 @@ Typed Arrays offer another way to work with binary data. They were first added t
 
 There are various flavors of Typed Arrays. Uint8Array is most similar to Buffer. The U in Uint means 'unsigned', which is equivalent to saying 'positive integers only'. Int8Array, on the other hand, can store positive and negative values.
 
-For this challenge, read the first buffer from process.stdin, copy all bytes into a Uint8Array and then log out a JSON stringified representation of the typed array.
+For this challenge, read the first buffer from `process.stdin`, copy all bytes into a Uint8Array and then log out a JSON stringified representation of the typed array.
 
 ###Documentation
 - [Typed Arrays](http://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
@@ -126,9 +126,9 @@ Array Buffers are the backend for Typed Arrays. Whereas Buffer in node is both t
 
 When you create a new Typed Array and don't give it an Array Buffer to be a view on top of it will create it's own new Array Buffer instead.
 
-For this challenge, take the integer from process.argv[2] and write it as the first element in a single element Uint32Array. Then create a Uint16Array from the Array Buffer of the Uint32Array and log out to the console the JSON stringified version of the Uint16Array.
+For this challenge, take the integer from `process.argv[2]` and write it as the first element in a single element Uint32Array. Then create a Uint16Array from the Array Buffer of the Uint32Array and log out to the console the JSON stringified version of the Uint16Array.
 
-**Bonus**: try to explain the relevance of the integer from process.argv[2], or explain why the Uint16Array has the particular values that it does.
+**Bonus**: try to explain the relevance of the integer from `process.argv[2]`, or explain why the Uint16Array has the particular values that it does.
 
 ###Documentation
 - [Typed Arrays](http://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays)
