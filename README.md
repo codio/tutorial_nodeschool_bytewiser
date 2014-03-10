@@ -1,8 +1,9 @@
 [![nodeschool-logo](stuff/nodeschool.png)](http://nodeschool.io)
-#Tutorial 03 - Bitewise
+#Tutorial 03 - Bytewiser
 **Learn how to manipulate binary data in node.js and HTML5 browsers**
 
-*All content is written and produced by [http://nodeschool.io](http://nodeschool.io). Please see the credits at the bottom of this page and if you have learnt a lot from these tutorials, please make a donation (also at the bottom).*
+###About the Author###
+This tutorial was written by [Max Ogden](https://github.com/maxogden). If you find this tutorial helpful and you'd like to say thanks to Max, why not [make a small donation here?](https://www.gittip.com/maxogden)
 
 #Video
 If you prefer a video rather than reading the instructions below, there is a video that runs through the Codio + Nodeschool.io system (yes, it's a tutorial on how to use the tutorial) : [https://vimeo.com/86100550](https://vimeo.com/86100550)
@@ -71,17 +72,3 @@ Each tutorial is installed as node module that can be run from the command line.
 #Other Tutorials
 [http://nodeschool.io](http://nodeschool.io) has a several excellent tutorials. We have packaged these up so they run within Codio and the full set can be found on our [Nodeschool Tutorial page.](http://codio.com/tutorials)
 
-#Credits
-![Nodeschool](http://nodeschool.io/images/nodeschool.png)
-
-The Nodeschool tutorials are the much excellent work of the following hackers
-
-Rod Vagg ([github/rvagg](https://github.com/rvagg), [twitter@rvagg](http://twitter.com/rvagg)), 
-Andrey Sidorov ([github/sidorares](https://github.com/sidorares), [twitter@sidorares](http://twitter.com/sidorares)), 
-Julián Duque ([github/julianduque](https://github.com/julianduque), [twitter@julian_duque](http://twitter.com/julian_duque)), 
-Lars-Magnus Skog ([github/ralphtheninja](https://github.com/ralphtheninja), [twitter@ralphtheninja](http://twitter.com/ralphtheninja)), 
-Tim Inman ([github/thehack](https://github.com/thehack), [twitter@timinman](http://twitter.com/timinman)), 
-Dan Flettre ([github/Flet](https://github.com/Flet), [twitter@flettre](http://twitter.com/flettre)) 
-
-##Donations
-If you feel you have benefitted from this or the other tutorials, how about [donating to Rodd Vagg using gittip](https://www.gittip.com/rvagg/)
